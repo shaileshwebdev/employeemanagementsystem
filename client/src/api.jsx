@@ -1,4 +1,4 @@
-const BASE_URL = 'https://employeemanagementsystem-26ri.onrender.com/';
+const BASE_URL = 'https://employeemanagementsystem-26ri.onrender.com';
 
 export const GetAllEmployees = async (search = '', page = 1, limit = 5) => {
     const url =
