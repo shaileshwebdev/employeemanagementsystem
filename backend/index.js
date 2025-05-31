@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 
 require('./Models/db');
 app.use(cors({
-    origin:"https://employeemanagementsystem-3-s7ov.onrender.com"));
+    origin:"https://employeemanagementsystem-3-s7ov.onrender.com"}));
 app.use(bodyParser.json());
 
 app.use('/api/employees', EmployeeRoutes);
