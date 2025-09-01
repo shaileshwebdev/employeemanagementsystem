@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Users, Sun, Moon } from "lucide-react";
-import "./navbar.css";
+import "./Navbar.css";
 import { useTheme } from "../context/ThemeContext";
 // 👈 apne folder ke hisaab se path adjust karo
 
