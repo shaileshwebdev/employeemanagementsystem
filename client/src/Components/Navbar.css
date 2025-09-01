@@ -1,0 +1,151 @@
+/* Navbar */
+.navbar {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background: var(--navbar-bg);
+  color: var(--navbar-text);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40rem;
+}
+
+/* Left side */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  color: var(--navbar-text);
+}
+
+.navbar-logo .icon {
+  color: #2563eb;
+  width: 24px;
+  height: 24px;
+}
+
+/* Right side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Desktop Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.2s;
+  font-size: 16px;
+  padding: 6px 10px;
+  color: var(--navbar-text);
+}
+
+.navbar-links li a:hover {
+  color: #2563eb;
+}
+
+/* Mobile Toggle */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle .icon {
+  width: 26px;
+  height: 26px;
+  color: #333;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+  padding: 20px;
+  gap: 15px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.mobile-menu a:hover {
+  color: #2563eb;
+}
+
+/* Existing Navbar CSS jo tumne diya tha usi me ye add kar dena */
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.theme-toggle-btn .icon {
+  width: 22px;
+  height: 22px;
+  color: var(--navbar-text); /* theme ke hisaab se change hoga */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* hide desktop links */
+  }
+
+  .navbar-toggle {
+    display: block; /* show hamburger */
+  }
+
+  .mobile-menu {
+    display: flex; /* show mobile dropdown */
+  }
+}

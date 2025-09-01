@@ -1,0 +1,77 @@
+:root {
+  --modal-bg: #1e1e2f;
+  --modal-text: #ffffff;
+  --modal-header-text: #4da3ff;
+  --modal-border: #3f3f5a;
+  --modal-hover: #33334d;
+  --btn-primary-bg: #4da3ff;
+  --btn-primary-hover: #1e90ff;
+}
+
+/* Modal backdrop override */
+.modal {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Modal Dialog */
+.modal-dialog {
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+/* Modal Content */
+.modal-content {
+  background: var(--modal-bg) !important;
+  color: var(--modal-text) !important;
+  border: 1px solid var(--modal-border) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Modal Header */
+.modal-header {
+  border-bottom: 1px solid var(--modal-border) !important;
+  background: var(--modal-bg) !important;
+}
+
+.modal-title {
+  color: var(--modal-header-text) !important;
+  font-weight: 600;
+}
+
+.btn-close {
+  filter: invert(1); /* White close button */
+}
+
+/* Modal Body */
+.modal-body label {
+  color: var(--modal-text) !important;
+  font-weight: 500;
+}
+
+.modal-body input {
+  background: #2a2a3d !important;
+  border: 1px solid var(--modal-border) !important;
+  color: var(--modal-text) !important;
+}
+
+.modal-body input:focus {
+  background: #2a2a3d !important;
+  border-color: var(--btn-primary-bg) !important;
+  box-shadow: none !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--btn-primary-bg) !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background: var(--btn-primary-hover) !important;
+}
+
+/* Form spacing */
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
